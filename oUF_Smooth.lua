@@ -1,9 +1,6 @@
 local _, ns = ...
-local cfg = ns.cfg
 local oUF = ns.oUF or oUF
 assert(oUF, "<name> was unable to locate oUF install.")
-
-if not cfg.options.smooth then return end
 
 local smoothing = {}
 local function Smooth(self, value)
