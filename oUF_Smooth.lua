@@ -24,6 +24,20 @@ local function hook(frame)
 	if frame.Power and frame.Power.Smooth then
 		frame:SmoothBar(frame.Power)
 	end
+	if frame.HealthPrediction then
+		if (frame.HealthPrediction.myBar and frame.HealthPrediction.myBar.Smooth) then
+			frame:SmoothBar(frame.HealthPrediction.myBar)
+		end
+		if (frame.HealthPrediction.otherBar and frame.HealthPrediction.otherBar.Smooth) then
+			frame:SmoothBar(frame.HealthPrediction.otherBar)
+		end
+		if (frame.HealthPrediction.absorbBar and frame.HealthPrediction.absorbBar.Smooth) then
+			frame:SmoothBar(frame.HealthPrediction.absorbBar)
+		end
+		if (frame.HealthPrediction.healAbsorbBar and frame.HealthPrediction.healAbsorbBar.Smooth) then
+			frame:SmoothBar(frame.HealthPrediction.healAbsorbBar)
+		end
+	end
 end
 
 
